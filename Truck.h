@@ -9,7 +9,7 @@ using namespace std;
 
 #ifndef TRUCK_H
 #define TRUCK_H
-class Truck : public Vehicle {
+class Truck : public Vehicle { // Note to self: Remember that the "public Vehicle" part just means that this class derives from the Vehicle class and that it's public members are public in this class. It's protected members are still protected in this class, though.
 	protected:
 		long towCap;
 	public:
