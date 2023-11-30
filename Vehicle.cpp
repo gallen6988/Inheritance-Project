@@ -12,10 +12,6 @@ Vehicle::Vehicle() {
 	manufacturer = "NONE";
 	year = 0;
 }
-Vehicle::Vehicle(string maker, int yearMade) {
-	manufacturer = maker;
-	year = yearMade;
-}
 string Vehicle::getManufacturer() const {
 	return manufacturer;
 }
@@ -23,7 +19,7 @@ int Vehicle::getYear() const {
 	return year;
 }
 void Vehicle::displayInfo() const {
-	cout << "Manufacturer: " << manufacturer << "\nYear: " << year << endl;
+	cout << "Manufacturer: " << getManufacturer() << "\nYear: " << getYear() << endl;
 }
 void Vehicle::setManufacturer(string maker) {
 	manufacturer = maker;
