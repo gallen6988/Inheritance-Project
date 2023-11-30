@@ -8,7 +8,10 @@
 #include <iostream>
 using namespace std;
 
-Vehicle::Vehicle() {}
+Vehicle::Vehicle() {
+	manufacturer = "NONE";
+	year = 0;
+}
 Vehicle::Vehicle(string maker, int yearMade) {
 	manufacturer = maker;
 	year = yearMade;
