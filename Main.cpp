@@ -9,6 +9,7 @@
 using namespace std;
 
 int main() {
+//********************************* Driver for Vehicle Class ***********************************
 	Vehicle automobile;
 	string manufacturer;
 	int year;
@@ -24,4 +25,23 @@ int main() {
 
 	cout << endl << "Vehicle Information:" << endl;
 	automobile.Vehicle::displayInfo();
+
+//*********************************** Driver for Car Class *************************************
+	Car drivableCar;
+	int doorNum;
+	
+	cout << endl << "\nCar:\n" << "Enter the manufacturer: ";
+	cin.ignore();
+	getline(cin, manufacturer);
+	cout << "Enter the year built: ";
+	cin >> year;
+	cout << "Enter the number of doors: ";
+	cin >> doorNum;
+
+	drivableCar.setManufacturer(manufacturer);
+	drivableCar.setYear(year);
+	drivableCar.setDoorNum(doorNum);
+
+	cout << endl << "Vehicle Information:" << endl;
+	drivableCar.Car::displayInfo();
 }
