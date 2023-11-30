@@ -9,5 +9,19 @@
 using namespace std;
 
 int main() {
+	Vehicle automobile;
+	string manufacturer;
+	int year;
 
+	cout << "Vehicle Program\n\n" << "Vehicle:" << endl << "Enter the manufacturer: ";
+	cin.clear();
+	getline(cin, manufacturer);
+	cout << "Enter the year built: ";
+	cin >> year;
+
+	automobile.setManufacturer(manufacturer);
+	automobile.setYear(year);
+
+	cout << endl << "Vehicle Information:" << endl;
+	automobile.Vehicle::displayInfo();
 }
