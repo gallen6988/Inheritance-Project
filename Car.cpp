@@ -18,6 +18,6 @@ void Car::setDoorNum(int numOfDoors) {
 	doorNum = numOfDoors;
 }
 void Car::displayInfo() {
-	cout << "Number of Doors: " << doorNum << endl;
 	Vehicle::displayInfo();
+	cout << "Number of Doors: " << doorNum << endl;
 }
