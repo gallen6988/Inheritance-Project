@@ -8,7 +8,7 @@
 #include <iostream>
 using namespace std;
 
-Vehicle::Vehicle() {
+Vehicle::Vehicle() { // Automatically sets manufacturer to NONE and year to 0 because this is the default constructor.
 	manufacturer = "NONE";
 	year = 0;
 }
@@ -19,7 +19,7 @@ int Vehicle::getYear() const {
 	return year;
 }
 void Vehicle::displayInfo() const {
-	cout << "Manufacturer: " << getManufacturer() << "\nYear: " << getYear() << endl;
+	cout << "Manufacturer: " << getManufacturer() << "\nYear: " << getYear() << endl; // Displays its member variables' values by using getManufacturer() and getYear().
 }
 void Vehicle::setManufacturer(string maker) {
 	manufacturer = maker;
