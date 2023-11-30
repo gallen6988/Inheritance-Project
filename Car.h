@@ -9,7 +9,14 @@ using namespace std;
 
 #ifndef CAR_H
 #define CAR_H
-class Car : public Vehicle {
 
+class Car : public Vehicle {
+	protected:
+		int doorNum;
+	public:
+		Car();
+		int getDoorNum();
+		void setDoorNum(int);
+		void displayInfo();
 };
 #endif
