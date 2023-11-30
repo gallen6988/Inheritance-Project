@@ -15,6 +15,7 @@ class Vehicle {
 		string manufacturer;
 		int year;
 	public:
+		Vehicle();
 		Vehicle(string, int);
 		string getManufacturer() const;
 		int getYear() const;
