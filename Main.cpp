@@ -44,4 +44,23 @@ int main() {
 
 	cout << endl << "Vehicle Information:" << endl;
 	drivableCar.Car::displayInfo();
+
+//********************************** Driver for Truck Class ************************************
+	Truck towTruck;
+	long towCap;
+	
+	cout << endl << "\nTruck:\n" << "Enter the manufacturer: ";
+	cin.ignore();
+	getline(cin, manufacturer);
+	cout << "Enter year built: ";
+	cin >> year;
+	cout << "Enter towing capacity (weight it can handle): ";
+	cin >> towCap;
+
+	towTruck.setManufacturer(manufacturer);
+	towTruck.setYear(year);
+	towTruck.setTowCap(towCap);
+
+	cout << "\nVehicle Information:" << endl;
+	towTruck.Truck::displayInfo();
 }
